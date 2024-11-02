@@ -1,3 +1,10 @@
+{/* Aqui va la importacion Carousel.jsx  */}
+{/* Aqui va la importacion CategoryList.jsx   */}
+{/* Aqui va la importacion Filter.jsx    */}
+{/* Aqui va la importacion RecipeCard.jsx    */}
+{/* Aqui va la importacion Benefits.jsx    */}
+
+
 
 export const HomePage = () => {
   return (
