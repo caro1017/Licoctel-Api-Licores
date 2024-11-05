@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Box from '@mui/material/Box';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
-const FloatingButton = () => {
+export default function FloatingButton() {
+  // const FloatingButton = () => {
   return (
-    <div>FloatingButton</div>
-  )
+    <Box sx={{ '& > :not(style)': { m: 1 } }}>
+      <Fab color="secondary" aria-label="edit">
+        <WhatsAppIcon />
+      </Fab>
+    </Box>
+  );
 }
-
-export default FloatingButton
