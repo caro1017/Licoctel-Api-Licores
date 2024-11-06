@@ -1,10 +1,10 @@
 import { useState } from "react";
 import AppProvider from "./context/AppContext";
 import { RecipeModal } from "./components/RecipeModal";
-import { FloatingButton } from "./components/FloatingButton";
 import { HomePage } from "./pages/HomePage";
 import Navbar from "./components/Navbar";
 import { Footer } from "./components/Footer";
+import { FloatingButton } from "./components/FloatingButton";
 
 function App() {
   const [isVerified, setIsVerified] = useState(false);
