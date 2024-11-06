@@ -2,7 +2,7 @@ import React from 'react'
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 
-export default function Filter() {
+export default function FilterCustom() {
   return (
     
     <Stack spacing={2} direction="row">

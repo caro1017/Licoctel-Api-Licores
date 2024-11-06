@@ -1,10 +1,10 @@
 import { useState } from "react";
-{/* Aqui va la importacion AppContext.jsx  */}
+{/* Aqui va la importacion AppContext.jsx  */ }
 import { RecipeModal } from "./components/RecipeModal";
-import {FloatingButton} from "./components/FloatingButton"; //Aqui va la importacion FloatingButton.jsx   
+import FloatingButton from "./components/FloatingButton"; //Aqui va la importacion FloatingButton.jsx   
 import { HomePage } from "./pages/HomePage";
 import { Footer } from "./components/Footer";
-{/* Aqui va la importacion AppContext.jsx  */}
+{/* Aqui va la importacion AppContext.jsx  */ }
 
 
 function App() {
@@ -17,12 +17,12 @@ function App() {
   return (
     <>
       {/* Aqui va el componentes AppContext.jsx  */}
-      {!isVerified && <RecipeModal open={!isVerified} onConfirm={handleConfirm} />}
-      {isVerified && <>
-      <FloatingButton/>
+      {!isVerified && <RecipeModal onConfirm={handleConfirm} />}
+      <div>
+        <FloatingButton />
         <HomePage />
-        <Footer/>{/* Aqui va el Footer */}
-      </>}   
+        <Footer />{/* Aqui va el Footer */}
+      </div>
       {/* Aqui va el componentes AppContext.jsx  */}
     </>
   );
