@@ -1,31 +1,34 @@
-import React from 'react';
-import Box from '@mui/material/Box';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import { IconButton } from '@mui/material';
+import Box from "@mui/material/Box";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import { IconButton } from "@mui/material";
 
 export default function FloatingButton() {
- 
   return (
-    <Box 
+    <Box
       sx={{
-        position: 'fixed',
-        bottom: { xs: 16, md: 24 }, // Margen inferior responsivo
-        right: { xs: 16, md: 24 },  // Margen derecho responsivo
+        position: "fixed",
+        bottom: { xs: 16, md: 24 }, 
+        right: { xs: 16, md: 24 }, 
+        display: "flex",
+        alignItems: "center",
       }}
-      className="z-50"
+      className="z-50 space-x-2 group" 
     >
+      <div className="relative items-center hidden px-4 py-2 text-white bg-green-500 rounded-full shadow-lg group-hover:flex">
+        <span className="text-base font-medium">😊¡Hola! ¿Necesitas Ayuda?</span>
+      </div>
       <IconButton
         href="https://wa.me/your_number"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-green-500 hover:bg-green-600 text-white shadow-lg transition duration-300"
+        className="text-white bg-green-500 shadow-lg hover:bg-green-600"
         sx={{
-          width: { xs: 48, md: 56 }, // Tamaño responsivo para el botón
+          width: { xs: 48, md: 56 }, 
           height: { xs: 48, md: 56 },
-          borderRadius: '50%', // Hace que el botón sea redondo
+          borderRadius: "50%", 
         }}
       >
-        <WhatsAppIcon sx={{ fontSize: { xs: 24, md: 28 } }} /> {/* Tamaño responsivo del ícono */}
+        <WhatsAppIcon sx={{ fontSize: { xs: 24, md: 28 } }} />
       </IconButton>
     </Box>
   );
