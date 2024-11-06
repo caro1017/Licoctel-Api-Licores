@@ -4,7 +4,8 @@ import { RecipeModal } from "./components/RecipeModal";
 import { HomePage } from "./pages/HomePage";
 import Navbar from "./components/Navbar";
 import { Footer } from "./components/Footer";
-import { FloatingButton } from "./components/FloatingButton";
+import FloatingButton from "./components/FloatingButton";
+
 
 function App() {
   const [isVerified, setIsVerified] = useState(false);
@@ -19,7 +20,7 @@ function App() {
         {!isVerified && <RecipeModal onConfirm={handleConfirm} />}
         <div className={isVerified}>
           <Navbar />
-          <FloatingButton />
+          <FloatingButton/>
           <HomePage />
           <Footer />
         </div>
