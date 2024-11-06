@@ -1,11 +1,10 @@
 import { useState } from "react";
-{/* Aqui va la importacion AppContext.jsx  */ }
+import AppProvider from "./context/AppContext";
 import { RecipeModal } from "./components/RecipeModal";
-import FloatingButton from "./components/FloatingButton"; //Aqui va la importacion FloatingButton.jsx   
-import { HomePage } from "./pages/HomePage";
-import { Footer } from "./components/Footer";
-{/* Aqui va la importacion AppContext.jsx  */ }
-
+/* import { FloatingButton } from "./components/FloatingButton"; */
+/* import { HomePage } from "./pages/HomePage"; */
+import Navbar from "./components/Navbar";
+/* import { Footer } from "./components/Footer"; */
 
 function App() {
   const [isVerified, setIsVerified] = useState(false);
@@ -16,14 +15,15 @@ function App() {
 
   return (
     <>
-      {/* Aqui va el componentes AppContext.jsx  */}
-      {!isVerified && <RecipeModal onConfirm={handleConfirm} />}
-      <div>
-        <FloatingButton />
-        <HomePage />
-        <Footer />{/* Aqui va el Footer */}
-      </div>
-      {/* Aqui va el componentes AppContext.jsx  */}
+      <AppProvider>
+        {!isVerified && <RecipeModal onConfirm={handleConfirm} />}
+        <div className={isVerified}>
+          <Navbar />
+          {/* <FloatingButton /> */}
+          {/* <HomePage /> */}
+          {/* <Footer /> */}
+        </div>
+      </AppProvider>
     </>
   );
 }
