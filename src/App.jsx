@@ -1,10 +1,10 @@
 import { useState } from "react";
 import AppProvider from "./context/AppContext";
 import { RecipeModal } from "./components/RecipeModal";
-/* import { FloatingButton } from "./components/FloatingButton"; */
-/* import { HomePage } from "./pages/HomePage"; */
+import { FloatingButton } from "./components/FloatingButton";
+import { HomePage } from "./pages/HomePage";
 import Navbar from "./components/Navbar";
-/* import { Footer } from "./components/Footer"; */
+import { Footer } from "./components/Footer";
 
 function App() {
   const [isVerified, setIsVerified] = useState(false);
@@ -19,9 +19,9 @@ function App() {
         {!isVerified && <RecipeModal onConfirm={handleConfirm} />}
         <div className={isVerified}>
           <Navbar />
-          {/* <FloatingButton /> */}
-          {/* <HomePage /> */}
-          {/* <Footer /> */}
+          <FloatingButton />
+          <HomePage />
+          <Footer />
         </div>
       </AppProvider>
     </>
