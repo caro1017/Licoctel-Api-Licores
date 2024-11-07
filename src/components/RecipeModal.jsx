@@ -22,7 +22,7 @@ export const RecipeModal = ({ onConfirm }) => {
         <Box className="p-6 mx-auto mt-10 rounded-lg shadow-lg outline-none w-[90%] md:mt-32 md:max-w-md bg-customPurple">
           <img
             className="flex w-48 mx-auto mb-4 md:w-60"
-            src={"../../public/img/Logo_Licoctel_BL.webp"}
+            src={"/img/Logo_Licoctel_BL.webp"}
             alt="Logo Licoctel"
           />
           <p
