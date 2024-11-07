@@ -22,17 +22,17 @@ const CategoryList = () => {
   }, [setCategories]);
 
   const categoryImages = {
-    Cocktail: "../../public/img/Cocktail.webp",
-    "Ordinary Drink": "../../public/img/Ordinary_Drink.webp",
-    "Punch / Party Drink": "../../public/img/Party_Drink.webp",
-    Shake: "../../public/img/Shake.webp",
-    "Other / Unknown": "../../public/img/Unknown.webp",
-    Cocoa: "../../public/img/Cocoa.webp",
-    Shot: "../../public/img/Shot.webp",
-    "Coffee / Tea": "../../public/img/Coffee.webp",
-    "Homemade Liqueur": "../../public/img/Liqueur.webp",
-    Beer: "../../public/img/Beer.webp",
-    "Soft Drink": "../../public/img/Soft_Drink.webp",
+    Cocktail: "/img/Cocktail.webp",
+    "Ordinary Drink": "/img/Ordinary_Drink.webp",
+    "Punch / Party Drink": "/img/Party_Drink.webp",
+    Shake: "/img/Shake.webp",
+    "Other / Unknown": "/img/Unknown.webp",
+    Cocoa: "/img/Cocoa.webp",
+    Shot: "/img/Shot.webp",
+    "Coffee / Tea": "/img/Coffee.webp",
+    "Homemade Liqueur": "/img/Liqueur.webp",
+    Beer: "/img/Beer.webp",
+    "Soft Drink": "/img/Soft_Drink.webp",
   };
 
   const responsive = {

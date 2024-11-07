@@ -11,7 +11,7 @@ const Navbar = () => {
   const [isMusicOn, setIsMusicOn] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
   const audioRef = useRef(
-    new Audio("/public/audio/MA_Awesomemusic_ModernInterior.mp4")
+    new Audio("/audio/MA_Awesomemusic_ModernInterior.mp4")
   );
   const navigate = useNavigate();
 
@@ -82,7 +82,7 @@ const Navbar = () => {
 
         <img
           className="w-40 lg:w-56"
-          src="../../public/img/Logo_Licoctel_Color.webp"
+          src="/img/Logo_Licoctel_Color.webp"
           alt="Logo Licoctel"
         />
 
