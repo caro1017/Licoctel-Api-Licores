@@ -82,7 +82,7 @@ const Navbar = () => {
 
         <img
           className="w-40 lg:w-56"
-          src="/public/img/Logo_Licoctel_Color.webp"
+          src="../../public/img/Logo_Licoctel_Color.webp"
           alt="Logo Licoctel"
         />
 

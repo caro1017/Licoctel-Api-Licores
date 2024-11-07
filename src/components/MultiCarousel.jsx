@@ -5,9 +5,9 @@ import "react-multi-carousel/lib/styles.css";
 const MultiCarousel = () => {
   const carouselRef = useRef(null);
   const images = [
-    "/public/img/carrusel_3.webp",
-    "/public/img/carrusel_2.webp",
-    "/public/img/carrusel_1.webp",
+    "../../public/img/carrusel_3.webp",
+    "../../public/img/carrusel_2.webp",
+    "../../public/img/carrusel_1.webp",
   ];
 
   const responsive = {

@@ -12,7 +12,7 @@ export const Footer = () => {
         
        
         <div className="text-4xl font-bold">
-          <img src={"/public/img/Logo_Licoctel_BL.webp"} alt="Licoctel Logo" className="w-48 mx-auto " />
+          <img src={"../../public/img/Logo_Licoctel_BL.webp"} alt="Licoctel Logo" className="w-48 mx-auto " />
         </div>
 
     
