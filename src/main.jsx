@@ -4,11 +4,14 @@ import "./index.css";
 import App from "./App.jsx";
 /* Estilos Material UI en Segundo plano */
 import { StyledEngineProvider } from "@mui/material";
+import { BrowserRouter as Router } from "react-router-dom";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <StyledEngineProvider injectFirst>
-      <App />
-    </StyledEngineProvider>
+    <Router>
+      <StyledEngineProvider injectFirst>
+        <App />
+      </StyledEngineProvider>
+    </Router>
   </StrictMode>
 );

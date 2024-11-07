@@ -26,3 +26,14 @@ export const fetchCocktailsByCategory = async (category) => {
   const response = await axios.get(`${BASE_URL}filter.php?c=${category}`);
   return response.data.drinks;
 };
+
+// Función para obtener los detalles completos de una receta
+export const fetchRecipeDetails = async (idDrink) => {
+  try {
+    const response = await axios.get(`${BASE_URL}lookup.php?i=${idDrink}`);
+    return response.data.drinks ? response.data.drinks[0] : null;
+  } catch (error) {
+    console.error("Error fetching recipe details:", error);
+    return null;
+  }
+};

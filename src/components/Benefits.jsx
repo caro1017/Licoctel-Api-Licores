@@ -21,7 +21,7 @@ export const Benefits = () => {
     ];
   
     return (
-      <div className="flex flex-col items-center p-6">
+      <div id="sectionBenefits" className="flex flex-col items-center p-6">
         <h1 className="mb-12 text-4xl font-bold text-center font-secondary text-customPurple">
           Nuestros Beneficios
         </h1>

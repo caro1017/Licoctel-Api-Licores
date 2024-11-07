@@ -55,10 +55,10 @@ const CategoryList = () => {
   };
 
   return (
-    <div className="m-auto my-10 category-list">
+    <div id="sectionCategory" className="my-10 category-list">
       {categories && categories.length > 0 ? (
-        <div className="md:w-[80%] m-auto">
-          <div className="text-lg font-bold md:text-2xl ml-7 md:ml-0 ">
+        <div>
+          <div className="ml-10 text-lg font-bold md:text-2xl">
             <h2 className="text-customPurple">Nuestras categorías</h2>
             <p className="mb-10 font-secondary text-customGreen">
               Explora nuestra variedad de Cocteles
